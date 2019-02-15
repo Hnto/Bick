@@ -1,0 +1,29 @@
+{
+  "name": "hnto/bick",
+  "type": "tool",
+  "description": "A RabbitMQ wrapper with additional options (batch publish, tracking, message persistence)",
+  "authors": [
+    {
+      "name": "Herant Awadisan",
+      "email": "herant.awadisan@gmail.com"
+    }
+  ],
+  "keywords": [
+    "rabbitmq", "bick", "tracking", "batch"
+  ],
+  "minimum-stability": "stable",
+    "require": {
+      "php": "^7.1.3",
+      "php-amqplib/php-amqplib": "^2.8",
+      "ramsey/uuid": "^3.8",
+      "ext-json": "*"
+    },
+    "autoload": {
+      "psr-4": {
+        "Bick\\": "src/"
+      },
+      "exclude-from-classmap": [
+        "**/tests/"
+      ]
+    }
+}
