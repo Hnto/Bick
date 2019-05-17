@@ -75,7 +75,7 @@ class Bick
             throw new BickException('Consumer ' . $name . ' does not implement the correct interface');
         }
 
-        $consumer = $name($this->connection());
+        $consumer = new $name($this->connection());
 
         //If bick consumer, set the standard translator
         if ($consumer instanceof BickConsumer) {
