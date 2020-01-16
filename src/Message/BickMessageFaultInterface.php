@@ -14,10 +14,10 @@ interface BickMessageFaultInterface {
     /**
      * BickMessageFaultInterface constructor.
      *
-     * @param mixed|string $message
+     * @param string|array|null $message
      * @param int $code
      */
-    public function __construct(?string $message, int $code);
+    public function __construct($message, int $code);
 
     /**
      * @return array|mixed

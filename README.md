@@ -119,7 +119,7 @@ The logic is the same as when publishing one message. The difference is that you
 #### Example
 ```php
 try {
-    $publisher = $bick->publisher();
+    $publisher = $bick->publisher(BickPublisher::class);
     
     //Set the persistence adapter
     $publisher->setPersistenceAdapter($adapter);
